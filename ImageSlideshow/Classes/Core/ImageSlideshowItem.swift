@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 /// Used to wrap a single slideshow item and allow zooming on it
 @objcMembers
 open class ImageSlideshowItem: UIScrollView, UIScrollViewDelegate {
 
     /// Image view to hold the image
-    public let imageView = UIImageView()
+    public let imageView = AnimatedImageView()
 
     /// Activity indicator shown during image loading, when nil there won't be shown any
     public let activityIndicator: ActivityIndicatorView?
